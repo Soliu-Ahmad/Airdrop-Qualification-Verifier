@@ -40,6 +40,9 @@ const handleFormSubmit = (event) => {
     } else {
         document.getElementById('inEligible').textContent = 'Your wallet is not eligible for the airdrop.';
     }
+
+    // Clear the input field
+    document.getElementById('wallet').value = '';
 }
 
 // Attach the form submission handler
